@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <link rel="manifest" href="manifest.json">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name='admaven-placement' content=BqdC5rHY8>
     <title>Lucky Road</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="mobile-web-app-capable" content="yes">
@@ -95,7 +94,6 @@
     </style>
 </head>
 <body>
-
     <div id="unity-container" class="unity-desktop">
         <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
     </div>
@@ -108,14 +106,16 @@
             </div>
         </div>
     </div>
-
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
     <script>
         var buildUrl = "Build";
-        var loaderUrl = buildUrl + "/Web 4.loader.js";
+        var loaderUrl = buildUrl + "/Web 2.loader.js";
         var config = {
-            dataUrl: buildUrl + "/Web 4.data",
-            frameworkUrl: buildUrl + "/Web 4.framework.js",
-            codeUrl: buildUrl + "/Web 4.wasm",
+            dataUrl: buildUrl + "/Web 2.data",
+            frameworkUrl: buildUrl + "/Web 2.framework.js",
+            codeUrl: buildUrl + "/Web 2.wasm",
             streamingAssetsUrl: "StreamingAssets",
             companyName: "Lucky Road Game",
             productName: "Lucky Road",
@@ -147,7 +147,6 @@
                 // window.unityInstance.Module.SetCanvasSize(window.innerWidth, window.innerHeight);
             }
         }
-
         var script = document.createElement("script");
         script.src = loaderUrl;
         script.onload = function() {
@@ -166,17 +165,6 @@
             });
         };
         document.body.appendChild(script);
-
- // window.IsMobilePlatform = function () 
-  //{
-  //  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-  //};
-
     </script>
-    <script>
-  window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };
-</script>
-<script defer src="/_vercel/speed-insights/script.js"></script>
-
 </body>
 </html>
