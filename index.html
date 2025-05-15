@@ -107,16 +107,20 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bad-words@3.0.4/lib/badwords.min.js"></script>
+<script>
+  window.BadWordsFilter = new window.Filter();
+</script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
     <script>
         var buildUrl = "Build";
-        var loaderUrl = buildUrl + "/lucky-road.loader.js";
+        var loaderUrl = buildUrl + "/lucky-road-2.loader.js";
         var config = {
-            dataUrl: buildUrl + "/lucky-road.data",
-            frameworkUrl: buildUrl + "/lucky-road.framework.js",
-            codeUrl: buildUrl + "/lucky-road.wasm",
+            dataUrl: buildUrl + "/lucky-road-2.data",
+            frameworkUrl: buildUrl + "/lucky-road-2.framework.js",
+            codeUrl: buildUrl + "/lucky-road-2.wasm",
             streamingAssetsUrl: "StreamingAssets",
             companyName: "Lucky Road Game",
             productName: "Lucky Road",
